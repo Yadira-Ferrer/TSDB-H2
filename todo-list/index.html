@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/check-list.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Todo List</h1>
+        <h2 id="date">August 25, 2024</h2>
+      <div class="card">
+        <div class="add-container">
+          <input id="item-input" type="text" placeholder="New item"/>
+          <div id="add" class="circle"></div>
+        </div>
+        <div id="item-list" class="list-content">
+          <div class="item">
+            <div class="item-content">
+              <input type="checkbox" name="checkbox" class="checkbox-round" id="1" >
+              <p>Welcome to your list!</p>
+            </div>
+            <span id="close-1" class="close">&times;</span>
+          </div>
+          <div class="item">
+            <div class="item-content">
+              <input type="checkbox" name="checkbox" class="checkbox-round" id="1" >
+              <p>Hit the <span class="highlight">+</span> button to add a new item.</p>
+            </div>
+            <span id="close-2" class="close">&times;</span>            
+          </div>
+          <div class="item">
+            <div class="item-content">
+              <input type="checkbox" name="checkbox" class="checkbox-round" id="1" >
+              <p>Hit the <span class="highlight">&times;</span> to delete an item.</p>
+            </div>
+            <span id="close-3" class="close">&times;</span>   
+          </div>
+        </div>
+      <div>
+    </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
